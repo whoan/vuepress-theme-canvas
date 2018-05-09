@@ -1,0 +1,46 @@
+const path = require('path')
+
+module.exports = {
+  title: 'Some title',
+  description: 'Some Description',
+  themeConfig: {
+    // Assumes GitHub. Can also be a full GitLab url.
+    repo: 'whoan/vuepress-canvas',
+
+    // Optional options for generating "Edit this page" link
+
+    // if your docs are in a different repo from your main project:
+    docsRepo: 'your_user/your_docs_repo',
+    // defaults to true, set to false to disable
+    editLinks: true,
+    // custom text for edit link. Defaults to "Edit this page"
+    editLinkText: 'Edit this page!',
+
+    // custom property to show links about you
+    usefulLinks: [
+      {
+        href: 'https://twitter.com/your_username',
+        cssIcon: 'fa fa-fw fa-twitter'
+      },
+      {
+        href: 'https://stackoverflow.com/cv/your_username',
+        cssIcon: 'fa fa-fw fa-stack-overflow'
+      },
+      {
+        href: 'https://github.com/your_username',
+        cssIcon: 'fa fa-fw fa-github'
+      },
+      {
+        href: 'https://www.linkedin.com/in/your_username',
+        cssIcon: 'fa fa-fw fa-linkedin'
+      }
+    ]
+  },
+
+  // This allows to install local dependencies for the custom theme
+  chainWebpack: (config, isServer) => {
+    config.resolveLoader
+      .modules
+      .add(path.resolve(__dirname, './node_modules'))
+  }
+}

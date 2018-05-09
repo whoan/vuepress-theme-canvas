@@ -1,0 +1,57 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "../clean-blog/clean-blog";
+
+article a {
+  text-decoration: underline;
+}
+
+// Change the styling of dt/dd elements
+dt {
+  margin-bottom: 5px;
+}
+
+dd {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+pre {
+  border: none;
+  background-color: @gist-background;
+  border-radius: 3px !important;
+  font-size: 13px !important;
+  font-family: 'Source Code Pro' !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.121569) 0px 1px 1px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.121569) 0px 1px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.121569) 0px 1px 1px 0px;
+
+  code {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: black !important;
+}
+
+}
+
+code {
+  color: rgb(253, 103, 105) !important;
+  border: none;
+  background-color: @gist-background;
+  border-radius: 3px !important;
+  font-size: 11px !important;
+  font-family: 'Source Code Pro' !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.121569) 0px 1px 1px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.121569) 0px 1px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.121569) 0px 1px 1px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  // Smaller styles go here
+}

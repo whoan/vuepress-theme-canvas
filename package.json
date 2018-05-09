@@ -1,0 +1,18 @@
+{
+  "name": "vuepress-canvas",
+  "version": "0.1.0",
+  "description": "Custom theme for blogging based on Canvas",
+  "author": "Juan Eugenio Abadie <juaneabadie@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "moment": "^2.22.1",
+    "source-code-pro": "^2.30.1",
+    "source-sans-pro": "^2.20.2"
+  },
+  "devDependencies": {
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0"
+  }
+}
