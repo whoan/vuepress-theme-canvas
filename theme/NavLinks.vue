@@ -61,7 +61,6 @@ export default {
   },
   methods: {
     postDate (item) {
-      console.log(item)
       if (item.lastModified) {
         return moment(item.lastModified * 1000)
       }
