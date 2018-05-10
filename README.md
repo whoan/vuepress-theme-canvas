@@ -58,6 +58,7 @@ You can also set the icon you want to show in each link. Here an example:
 ## TODOs
 
 - Add pagination
+- Add Disqus
 
 ## Limitations
 
