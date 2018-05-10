@@ -27,7 +27,7 @@ fi
 
 shopt -s nullglob
 n_markdown_files=( *.md )
-if (( ${#n_markdown_files[@]} > 0 )); then
+if (( ${#n_markdown_files[@]} == 0 )); then
     echo "Creating a sample post..."
     echo '# My first post' > my-first-post.md
     echo "Don't forget to edit the config.js file to personalize your blog" >> my-first-post.md
