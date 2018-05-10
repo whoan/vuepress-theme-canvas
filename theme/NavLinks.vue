@@ -11,6 +11,7 @@
 
 <script>
 import NavLink from './NavLink.vue'
+import moment from 'moment'
 
 export default {
   components: { NavLink },
@@ -53,6 +54,18 @@ export default {
         .filter(link => {
           return link.path !== '/'
         })
+        .sort((a, b) => {
+          return moment.duration(this.postDate(b).diff(this.postDate(a)))
+        })
+    }
+  },
+  methods: {
+    postDate (item) {
+      console.log(item)
+      if (item.lastModified) {
+        return moment(item.lastModified * 1000)
+      }
+      return moment(item.frontmatter.lastModified)
     }
   }
 }
