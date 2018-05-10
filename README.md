@@ -2,6 +2,8 @@
 
 [Vuepress][vuepress] custom theme for blogging inspired on [Canvas: a Simple, Powerful Blog Publishing Platform][canvas]
 
+You can see [my own blog](https://whoan.me) as an example.
+
 ## Installation
 
 **As Easy as 1,2,3**
