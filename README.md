@@ -30,7 +30,7 @@ Install the theme:
 
 You will see a README file in your docs folder (if you didn't have one yet) and it's there to let `vuepress` render the *Home* page. See more information [here](https://vuepress.vuejs.org/default-theme-config/#homepage).
 
-> Important note: The root README will be ignored by the theme and won't be listed as a blog post (expected behavior). For the same reason, all its content (expect for the front matter) will be ignored.
+> Important note: The root README will be ignored by the theme and won't be listed as a blog post. For the same reason, all its content (expect for the front matter) will be ignored.
 
 ## Set the config file to your needs
 
@@ -40,7 +40,7 @@ Now that you have your new blog, it's time to personalize it. Go and change the 
 
 You can set the **lastModified** date of a blog post in the Front Matter like this:
 
-    lastModified: 2018-05-09
+    lastModified: '2018-05-09'
 
 And you can set **prev** and **next** posts in the footer of your posts adding something like this also in the Front Matter:
 
@@ -55,13 +55,17 @@ You can also set the icon you want to show in each link. Here an example:
       cssIcon: 'fa fa-fw fa-github'
     }]
 
+## TODOs
+
+- Add pagination
+
 ## Limitations
 
 This project is meant to be simple and it has some limitations. Some of them can be addressed with the time, others will never be implemented to maintain its simplicity.
 
 These are the current limitations, based on what you can expect for a blog:
 
-- It only list the markdown files in the root of your docs folder. In other words, it ignores the folders you can have in your docs repo.
+- It lists all the markdown files at the same level regardless the directory they are placed in.
 - It doesn't have tags.
 - It doesn't have a search bar.
 - It doesn't have a lot of other things you can find in other blogs; but it's beautiful, something you don't find in a lot of other blogs.
