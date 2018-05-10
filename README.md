@@ -1,8 +1,10 @@
 # Vuepress Canvas
 
-[Vuepress][vuepress] custom theme for blogging, inspired on [Canvas: a Simple, Powerful Blog Publishing Platform][canvas]
+[Vuepress][vuepress] custom theme for blogging inspired on [Canvas: a Simple, Powerful Blog Publishing Platform][canvas]
 
 ## Installation
+
+**As Easy as 1,2,3**
 
 First, create a docs folder if you don't have one yet:
 
@@ -10,37 +12,23 @@ First, create a docs folder if you don't have one yet:
 mkdir docs && cd docs
 ```
 
-Clone the repo and install dependencies:
+Clone the repo:
 
 ```bash
 git clone https://github.com/whoan/vuepress-canvas.git .vuepress
-cd .vuepress
-
-# copy an example config
-cp config.js.example config.js
-
-# install dependencies
-yarn  # or npm install
-
-# you need a root README like this in your docs folder
-cd ..
-[ ! -f README.md ] && echo -e "---\nhome: true\n---" > README.md
 ```
 
----------
+Install the theme:
 
-The README file in your docs folder is to let `vuepress` render the *Home* page. See more information [here](https://vuepress.vuejs.org/default-theme-config/#homepage).
+```bash
+.vuepress/install.sh
+```
+
+------------
+
+You will see a README file in your docs folder (if you didn't have one yet) and it's there to let `vuepress` render the *Home* page. See more information [here](https://vuepress.vuejs.org/default-theme-config/#homepage).
 
 > Important note: The root README will be ignored by the theme and won't be listed as a blog post (expected behavior). For the same reason, all its content (expect for the front matter) will be ignored.
-
-## Testing the theme
-
-Create a markdown document if you don't have one yet, and see how beautiful your blog is:
-
-```
-echo '# My first post' > my-first-post.md
-vuepress dev
-```
 
 ## Set the config file to your needs
 
@@ -56,6 +44,14 @@ And you can set **prev** and **next** posts in the footer of your posts adding s
 
     prev: /some-prev-blog
     next: /some-next-blog
+
+To set your personal links in the header of the pages, you have the array `usefulLinks` in the config file.  
+You can also set the icon you want to show in each link. Here an example:
+
+    [{
+      href: 'https://github.com/whoan',
+      cssIcon: 'fa fa-fw fa-github'
+    }]
 
 ## Limitations
 
@@ -74,9 +70,19 @@ These are the current limitations, based on what you can expect for a blog:
 
 It's due to you need a README.md in the root of the project. See [the installation section](#installation).
 
-#### Having compiling template errors
+#### I get compiling template errors
 
 You need to see which are the hurting files and modify them accordingly to make them markdown compliant. Don't know really which are the common reasons for this problem.
+
+#### I can't see the posts titles in the main page
+
+Each markdown file (your posts) need a `h1` header, so here you have a suggestion to write:
+
+```markdown
+# My Awesome Post
+```
+
+Now you will see the titles the Home page.
 
 ## License
 
