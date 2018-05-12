@@ -32,11 +32,27 @@ You will see a README file in your docs folder (if you didn't have one yet) and 
 
 > Important note: The root README will be ignored by the theme and won't be listed as a blog post. For the same reason, all its content (expect for the front matter) will be ignored.
 
+## Running your brand new blog
+
+If you didn't do it yet, [check how to install `vuepress`][vuepress-doc].
+
+Now that it is all set, you can test your blog like this:
+
+```bash
+vuepress dev $your_docs_dir
+```
+
+And once you are ready to build, run this command:
+
+```bash
+vuepress build $your_docs_dir
+```
+
 ## Set the config file to your needs
 
 Now that you have your new blog, it's time to personalize it. Go and change the *congif.js* file with your personal information.
 
-## Other functionalities
+## Features
 
 You can set the **lastModified** date of a blog post in the Front Matter like this:
 
@@ -77,10 +93,6 @@ These are the current limitations, based on what you can expect for a blog:
 
 It's due to you need a README.md in the root of the project. See [the installation section](#installation).
 
-#### I get compiling template errors
-
-You need to see which are the hurting files and modify them accordingly to make them markdown compliant. Don't know really which are the common reasons for this problem.
-
 #### I can't see the posts titles in the main page
 
 Each markdown file (your posts) need a `h1` header, so here you have a suggestion to write:
@@ -88,6 +100,10 @@ Each markdown file (your posts) need a `h1` header, so here you have a suggestio
 ```markdown
 # My Awesome Post
 ```
+
+#### I get compiling template errors
+
+You need to see which are the hurting files and modify them accordingly to make them markdown compliant. Don't know really which are the common reasons for this problem.
 
 Now you will see the titles the Home page.
 
@@ -97,3 +113,4 @@ Now you will see the titles the Home page.
 
 [vuepress]: https://github.com/vuejs/vuepress
 [canvas]: https://github.com/cnvs/canvas
+[vuepress-doc]: https://vuepress.vuejs.org/guide/getting-started.html
