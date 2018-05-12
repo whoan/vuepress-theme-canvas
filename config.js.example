@@ -37,7 +37,7 @@ module.exports = {
     ]
   },
 
-  // This allows to install local dependencies for the custom theme
+  // This allows to install local loaders for the custom theme (eg: sass-loader, less-lodaer)
   chainWebpack: (config, isServer) => {
     config.resolveLoader
       .modules
