@@ -30,7 +30,7 @@ Install the theme:
 
 You will see a README file in your docs folder (if you didn't have one yet) and it's there to let `vuepress` render the *Home* page. See more information [here](https://vuepress.vuejs.org/default-theme-config/#homepage).
 
-> Important note: The root README will be ignored by the theme and won't be listed as a blog post. For the same reason, all its content (expect for the front matter) will be ignored.
+> Important note: The root README will be ignored by the theme and won't be listed as a blog post. For the same reason, all its content (except for the front matter) will be ignored.
 
 ## Running your brand new blog
 
