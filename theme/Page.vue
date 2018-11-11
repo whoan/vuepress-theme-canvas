@@ -10,7 +10,6 @@
     <div class="content edit-link" v-if="editLink">
       <br>
       <a :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>
-      <OutboundLink/>
     </div>
 
     <div class="content page-nav" v-if="prev || next">
@@ -32,12 +31,10 @@
 </template>
 
 <script>
-import OutboundLink from '@default-theme/OutboundLink.vue'
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '@default-theme/util'
 import moment from 'moment'
 
 export default {
-  components: { OutboundLink },
   computed: {
     postDate () {
       if (this.$page.lastModified) {
