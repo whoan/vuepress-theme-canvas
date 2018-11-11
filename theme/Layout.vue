@@ -52,7 +52,7 @@ import Vue from 'vue'
 import nprogress from 'nprogress'
 import Home from './Home.vue'
 import Page from './Page.vue'
-import { pathToComponentName } from '@app/util'
+import { pathToComponentName } from './libs/utils'
 
 export default {
   components: { Home, Page },
