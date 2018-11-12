@@ -5,7 +5,7 @@
   "author": "Juan Eugenio Abadie <juaneabadie@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.0.0",
+    "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
     "moment": "^2.22.1",
     "source-code-pro": "^2.30.1",
