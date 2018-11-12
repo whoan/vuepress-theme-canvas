@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div id="head-c" class="container">
+  <div class="container">
+    <div id="head-c" >
         <div class="row">
-          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
             <h1 id="blog-name">
               <router-link
                 to="/">
@@ -15,35 +15,28 @@
           </div>
         </div>
     </div>
+    <div class="row">
+        <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
+          <div class="custom-layout" v-if="$page.frontmatter.layout">
+            <component :is="$page.frontmatter.layout"/>
+          </div>
+          <Home v-else-if="$page.frontmatter.home"/>
+          <Page v-else>
+            <slot name="page-top" slot="top"/>
+            <slot name="page-bottom" slot="bottom"/>
+          </Page>
+        </div>
+    </div>
+    <center>
+        <hr width="50%">
+        <span id="subtitle">{{ $description }}</span>
 
-    <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-              <div class="custom-layout" v-if="$page.frontmatter.layout">
-                <component :is="$page.frontmatter.layout"/>
-              </div>
-              <Home v-else-if="$page.frontmatter.home"/>
-              <Page v-else>
-                <slot name="page-top" slot="top"/>
-                <slot name="page-bottom" slot="bottom"/>
-              </Page>
+            <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
+                <p class="small">&copy; 2018 {{ $siteTitle }}. Code released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
             </div>
         </div>
-
-    </div>
-
-    <div class="container">
-        <center>
-            <hr width="50%">
-            <span id="subtitle">{{ $description }}</span>
-
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <p class="small">&copy; 2018 {{ $siteTitle }}. Code released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
-                </div>
-            </div>
-        </center>
-    </div>
+    </center>
   </div>
 </template>
 
