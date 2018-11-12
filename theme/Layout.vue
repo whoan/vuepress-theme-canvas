@@ -2,7 +2,7 @@
   <div>
     <div id="head-c" class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
             <h1 id="blog-name">
               <router-link
                 to="/">
@@ -18,7 +18,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
               <div class="custom-layout" v-if="$page.frontmatter.layout">
                 <component :is="$page.frontmatter.layout"/>
               </div>
@@ -38,7 +38,7 @@
             <span id="subtitle">{{ $description }}</span>
 
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                     <p class="small">&copy; 2018 {{ $siteTitle }}. Code released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
                 </div>
             </div>
