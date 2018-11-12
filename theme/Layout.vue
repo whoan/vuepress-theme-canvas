@@ -128,11 +128,20 @@ function updateMetaTags (meta, current) {
 <style src="./less/blog/blog.less" lang="less"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
 <style>
+  #blog-name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
   #blog-name a:hover, #blog-name a:focus {
     color: initial;
   }
 
   .header-anchor {
     display: none;
+  }
+
+  .nav-link {
+    padding: 0;
   }
 </style>
