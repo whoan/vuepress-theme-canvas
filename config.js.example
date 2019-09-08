@@ -35,12 +35,5 @@ module.exports = {
         cssIcon: 'fa fa-fw fa-linkedin'
       }
     ]
-  },
-
-  // This allows to install local loaders for the custom theme (eg: sass-loader, less-lodaer)
-  chainWebpack: (config, isServer) => {
-    config.resolveLoader
-      .modules
-      .add(path.resolve(__dirname, './node_modules'))
   }
 }
