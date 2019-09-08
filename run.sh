@@ -22,9 +22,9 @@ cd ..
 shopt -s nullglob
 n_markdown_files=( *.md )
 if (( ${#n_markdown_files[@]} == 0 )); then
-    echo "Creating a sample post..."
-    echo '# My first post' > my-first-post.md
-    echo "Do not forget to edit the config.js file to personalize your blog" >> my-first-post.md
+    echo "Creating sample posts..."
+    cp .vuepress/my-first-post.example.md my-first-post.md
+    cp .vuepress/README.md vuepress-canvas-readme.md
 fi
 
 if [ ! -f README.md ]; then
