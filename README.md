@@ -20,10 +20,10 @@ Clone the repo:
 git clone https://github.com/whoan/vuepress-canvas.git .vuepress
 ```
 
-Install the theme:
+See it run:
 
 ```bash
-.vuepress/install.sh
+.vuepress/run.sh
 ```
 
 ------------
