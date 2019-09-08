@@ -33,6 +33,6 @@ if (( ${#n_markdown_files[@]} == 0 )); then
 fi
 
 echo
-run_dev=".vuepress/node_modules/.bins/vuepress dev"
+run_dev=".vuepress/node_modules/.bin/vuepress dev"
 echo "Running $run_dev"
 $run_dev
