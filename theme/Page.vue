@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from '@default-theme/util'
+import { resolvePage, normalize, outboundRE, endingSlashRE } from '@vuepress/theme-default/util'
 import moment from 'moment'
 
 export default {
