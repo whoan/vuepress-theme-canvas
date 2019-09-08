@@ -64,11 +64,6 @@ You can also set the icon you want to show in each link. Here an example:
       cssIcon: 'fa fa-fw fa-github'
     }]
 
-## TODOs
-
-- Add pagination
-- Add Disqus
-
 ## Limitations
 
 This project is meant to be simple and it has some limitations. Some of them can be addressed with the time, others will never be implemented to maintain its simplicity.
