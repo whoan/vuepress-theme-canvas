@@ -28,29 +28,22 @@ See it run:
 
 ------------
 
-You will see a README file in your docs folder (if you didn't have one yet) and it's there to let `vuepress` render the *Home* page. See more information [here](https://vuepress.vuejs.org/default-theme-config/#homepage).
+You will see a README file in your docs folder and it's there to let `vuepress` render the *Home* page. See more information [here](https://vuepress.vuejs.org/default-theme-config/#homepage).
 
-> Important note: The root README will be ignored by the theme and won't be listed as a blog post. For the same reason, all its content (except for the front matter) will be ignored.
+> Important note: The root README will be ignored by the theme and it won't be listed as a blog post. For the same reason, all its content (except for the front matter) will be ignored.
 
-## Running your brand new blog
+## Building your brand new blog
 
-If you didn't do it yet, [check how to install `vuepress`][vuepress-doc].
-
-Now that it is all set, you can test your blog like this:
+Once you placed your fantastic posts in your docs folder, build your blog like this:
 
 ```bash
-vuepress dev $your_docs_dir
-```
-
-And once you are ready to build, run this command:
-
-```bash
-vuepress build $your_docs_dir
+# cd $your_docs_dir
+.vuepress/node_modules/.bin/vuepress build
 ```
 
 ## Set the config file to your needs
 
-Now that you have your new blog, it's time to personalize it. Go and change the *congif.js* file with your personal information.
+Now it's time to personalize your blog's information. Go and change the *congif.js* file with your personal data.
 
 ## Features
 
