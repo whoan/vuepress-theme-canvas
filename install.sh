@@ -33,5 +33,6 @@ if (( ${#n_markdown_files[@]} == 0 )); then
 fi
 
 echo
-echo "To see it run, execute this in your docs folder: vuepress dev"
-echo "DONE!"
+run_dev=".vuepress/node_modules/.bins/vuepress dev"
+echo "Running $run_dev"
+$run_dev
