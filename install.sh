@@ -19,17 +19,17 @@ fi
 # go to the docs folder
 cd ..
 
-if [ ! -f README.md ]; then
-    echo "Creating README in the docs folder..."
-    echo -e "---\nhome: true\n---" > README.md
-fi
-
 shopt -s nullglob
 n_markdown_files=( *.md )
 if (( ${#n_markdown_files[@]} == 0 )); then
     echo "Creating a sample post..."
     echo '# My first post' > my-first-post.md
     echo "Do not forget to edit the config.js file to personalize your blog" >> my-first-post.md
+fi
+
+if [ ! -f README.md ]; then
+    echo "Creating README in the docs folder..."
+    echo -e "---\nhome: true\n---" > README.md
 fi
 
 echo
