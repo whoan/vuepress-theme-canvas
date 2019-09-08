@@ -1,8 +1,8 @@
 const path = require('path')
 
 module.exports = {
-  title: 'Some title',
-  description: 'Some Description',
+  title: 'My Blog is alive!',
+  description: 'This is my new beautiful blog',
   themeConfig: {
     // Assumes GitHub. Can also be a full GitLab url.
     repo: 'whoan/vuepress-canvas',
