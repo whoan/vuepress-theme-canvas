@@ -24,7 +24,7 @@ n_markdown_files=( *.md )
 if (( ${#n_markdown_files[@]} == 0 )); then
     echo "Creating sample posts..."
     cp .vuepress/my-first-post.example.md my-first-post.md
-    cp .vuepress/README.md vuepress-canvas-readme.md
+    cp .vuepress/README.md vuepress-theme-canvas-readme.md
 fi
 
 if [ ! -f README.md ]; then

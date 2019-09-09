@@ -6,7 +6,7 @@ module.exports = {
   theme: 'canvas',
   themeConfig: {
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'whoan/vuepress-canvas',
+    repo: 'whoan/vuepress-theme-canvas',
 
     // Optional options for generating "Edit this page" link
 

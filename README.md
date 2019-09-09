@@ -1,4 +1,4 @@
-# Vuepress Canvas
+# Vuepress theme Canvas
 
 [Vuepress][vuepress] custom theme for blogging inspired on [Canvas: a Simple, Powerful Blog Publishing Platform][canvas]
 
@@ -17,7 +17,7 @@ mkdir docs && cd docs
 Clone the repo:
 
 ```bash
-git clone https://github.com/whoan/vuepress-canvas.git .vuepress
+git clone https://github.com/whoan/vuepress-theme-canvas.git .vuepress
 ```
 
 See it run:
