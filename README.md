@@ -49,7 +49,7 @@ Now it's time to personalize your blog's information. Go and change the *congif.
 
 You can set the **lastModified** date of a blog post in the Front Matter like this:
 
-    lastModified: '2018-05-09'
+    lastModified: '2019-09-09'
 
 And you can set **prev** and **next** posts in the footer of your posts adding something like this also in the Front Matter:
 

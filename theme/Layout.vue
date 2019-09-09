@@ -33,7 +33,7 @@
 
         <div class="row">
             <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
-                <p class="small">&copy; 2018 {{ $siteTitle }}. Code released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+                <p class="small">&copy; {{ year }} {{ $siteTitle }}. Code released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
             </div>
         </div>
     </center>
@@ -42,6 +42,7 @@
 
 <script>
 import Vue from 'vue'
+import moment from 'moment'
 import nprogress from 'nprogress'
 import Home from './Home.vue'
 import Page from './Page.vue'
@@ -89,6 +90,12 @@ export default {
     this.$router.afterEach(() => {
       nprogress.done()
     })
+  },
+
+  computed: {
+    year () {
+      return moment.utc().format('Y')
+    }
   },
 
   beforeDestroy () {
