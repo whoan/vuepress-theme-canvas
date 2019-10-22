@@ -60,12 +60,8 @@ export default {
     }
   },
   methods: {
-    postDate (item) {
-      if (item.lastModified) {
-        return moment(item.lastModified * 1000)
-      }
-      return moment(item.frontmatter.lastModified)
-    }
+    postDate: item => 
+      moment(item.lastModified ? item.lastModified * 1000 : item.frontmatter.lastModified) 
   }
 }
 </script>
