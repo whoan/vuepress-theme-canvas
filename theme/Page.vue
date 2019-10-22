@@ -90,11 +90,9 @@ export default {
       }
     },
     editLinkText () {
-      return (
-        this.$themeLocaleConfig.editLinkText ||
+      return this.$themeLocaleConfig.editLinkText ||
         this.$site.themeConfig.editLinkText ||
         `Edit this page`
-      )
     }
   }
 }
