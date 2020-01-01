@@ -97,7 +97,7 @@ Now you will see the titles the Home page.
 
 ## License
 
-[MIT](https://github.com/vuejs/vuepress/blob/master/LICENSE)
+[MIT](https://github.com/whoan/vuepress-canvas/blob/master/LICENSE)
 
 [vuepress]: https://github.com/vuejs/vuepress
 [canvas]: https://github.com/cnvs/canvas
