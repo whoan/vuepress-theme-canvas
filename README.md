@@ -34,6 +34,9 @@ You will see a README file in your docs folder and it's there to let `vuepress` 
 
 ## Building your brand new blog
 
+> IMPORTANT! You must always use `.vuepress/node_modules/.bin/vuepress` instead of the global `vuepress` for this project
+
+
 Once you placed your fantastic posts in your docs folder, build your blog like this:
 
 ```bash
