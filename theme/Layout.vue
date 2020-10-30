@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container layout">
     <div id="head-c" >
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-1 col-md-10">
@@ -52,11 +52,12 @@ export default {
   components: { Home, Page },
 
   created () {
-    if (this.$ssrContext) {
-      this.$ssrContext.title = this.$title
-      this.$ssrContext.lang = this.$lang
-      this.$ssrContext.description = this.$page.description || this.$description
+    if (! this.$ssrContext) {
+      return;
     }
+    this.$ssrContext.title = this.$title
+    this.$ssrContext.lang = this.$lang
+    this.$ssrContext.description = this.$page.description || this.$description
   },
 
   mounted () {
@@ -104,21 +105,16 @@ export default {
 }
 
 function updateMetaTags (meta, current) {
-  if (current) {
-    current.forEach(c => {
-      document.head.removeChild(c)
-    })
-  }
-  if (meta) {
-    return meta.map(m => {
-      const tag = document.createElement('meta')
-      Object.keys(m).forEach(key => {
-        tag.setAttribute(key, m[key])
-      })
-      document.head.appendChild(tag)
-      return tag
-    })
-  }
+  current && current.forEach(c => {
+    document.head.removeChild(c)
+  })
+  
+  return meta ? meta.map(m => {
+    const tag = document.createElement('meta')
+    Object.keys(m).forEach(key => tag.setAttribute(key, m[key]))
+    document.head.appendChild(tag)
+    return tag
+  }) : null
 }
 </script>
 
